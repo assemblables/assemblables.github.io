@@ -3,9 +3,36 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
 	<title>Assemblables</title>
 </head>
 <body>
-	<h1>Assemblables</h1>
+	<h1 class="page-title">Assemblables.org</h1>
+    <h2 class="page-subtitle">Assembly data that stays with the PCB</h2>
+
+    <p>Assemblables is a free plugin for KiCad, Altium Designer, and other PCB design tools that creates QR-code with the assembly data for the PCB. Since that moment, the assembly data stays with the physical board itself.</p>
+	<p>Scanning the code opens the documentation for that specific board and revision.</p>
+
+	<p>The published package can include:</p>
+	<ul>
+		<li>an Interactive HTML BOM for manual assembly;</li>
+		<li>pick-and-place position data for automated assembly;</li>
+		<li>a bill of materials, with selected component names hidden when needed;</li>
+		<li>copper layers for inspection and repair;</li>
+		<li>silkscreen layers.</li>
+	</ul>
+
+	<h2 class="section-title">For PCB engineers and assembly teams</h2>
+	<p>The code provides a direct connection between a physical PCB and its assembly data. It helps engineers distinguish board revisions and gives R&amp;D and assembly teams a shared reference without relying on filenames or separate document folders.</p>
+
+	<h2 class="section-title">For repair technicians</h2>
+	<p>A technician can scan the board to check component values, placement, and available layer data. Including copper layers can also help trace and reconstruct damaged connections.</p>
+
+	<h2 class="section-title">For pick-and-place machines</h2>
+	<p>Assemblables enables a pick-and-place machine to identify a board, retrieve its assembly data, and begin component placement without manual intervention.</p>
+	<p>The assembly data also includes the QR code's position and dimensions, allowing the machine to use it as an initial reference for board alignment.</p>
+
+	<h2 class="section-title">Links and access</h2>
+	<p>QR codes use the short <code>asmb.io/&lt;unique_id&gt;</code> format to keep the printed code compact. Links are unlisted by default: search engines do not index them, and access requires the direct URL.</p>
 </body>
 </html>
